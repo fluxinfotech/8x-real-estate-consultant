@@ -1,8 +1,8 @@
 export type PropertyBadgeKey = 'new_launch' | 'ready_to_move' | 'luxury' | 'investment_hotspot'
 
-export type BudgetTierKey = 'all' | 'under_10' | '10_to_30' | '30_to_75' | '75_plus'
+export type BudgetTierKey = 'all' | 'under_50_lakh' | '50_lakh_to_1_cr' | '1_to_2_cr' | '2_to_4_cr' | 'above_5_cr'
 
-export type PropertyBudgetTier = Exclude<BudgetTierKey, 'all'>
+export type PropertyBudgetTier = string
 
 export type Property = {
   id: string

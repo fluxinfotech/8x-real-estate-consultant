@@ -9,7 +9,7 @@ import { ColorModeProvider } from './context/ColorModeContext'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <HelmetProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <ColorModeProvider>
           <App />
         </ColorModeProvider>

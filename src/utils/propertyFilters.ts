@@ -31,7 +31,14 @@ export function uniqueTypes(properties: Property[]) {
 export function filterProperties(properties: Property[], f: PropertyFilterState) {
   const q = f.search.trim().toLowerCase()
   return properties.filter((p) => {
-    if (f.budget !== 'all' && p.budgetTier !== f.budget) return false
+    if (f.budget !== 'all') {
+      const price = p.priceSort
+      if (f.budget === 'under_50_lakh' && price >= 5000) return false
+      if (f.budget === '50_lakh_to_1_cr' && (price < 5000 || price >= 10000)) return false
+      if (f.budget === '1_to_2_cr' && (price < 10000 || price >= 20000)) return false
+      if (f.budget === '2_to_4_cr' && (price < 20000 || price >= 40000)) return false
+      if (f.budget === 'above_5_cr' && price < 40000) return false
+    }
     if (f.city !== 'all' && p.city !== f.city) return false
     if (f.propertyType !== 'all' && p.type !== f.propertyType) return false
     if (!q) return true

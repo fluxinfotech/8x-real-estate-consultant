@@ -9,8 +9,9 @@ export const BADGE_LABELS: Record<PropertyBadgeKey, string> = {
 
 export const BUDGET_OPTIONS: { value: string; label: string }[] = [
   { value: 'all', label: 'All budgets' },
-  { value: 'under_10', label: 'Under ₹10 Cr scale' },
-  { value: '10_to_30', label: '₹10 – ₹30 Cr' },
-  { value: '30_to_75', label: '₹30 – ₹75 Cr / Premium' },
-  { value: '75_plus', label: 'Ultra-luxury & landmark' },
+  { value: 'under_50_lakh', label: 'Under 50 Lac' },
+  { value: '50_lakh_to_1_cr', label: '50 Lac - 1 Cr' },
+  { value: '1_to_2_cr', label: '1 Cr - 2 Cr' },
+  { value: '2_to_4_cr', label: '2 Cr - 4 Cr' },
+  { value: 'above_5_cr', label: 'Above 5 Cr' },
 ]
