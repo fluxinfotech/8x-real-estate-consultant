@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { Box, Container, Grid, Typography } from '@mui/material'
+import { Box, CircularProgress, Container, Grid, Typography } from '@mui/material'
 import { Reveal } from '../animations/Reveal'
 import { PropertyCard } from '../components/properties/PropertyCard'
 import { PropertyFiltersToolbar } from '../components/properties/PropertyFiltersToolbar'
@@ -12,7 +12,7 @@ import type { Property } from '../types'
 import { defaultPropertyFilters, filterProperties, sortProperties, type PropertyFilterState } from '../utils/propertyFilters'
 export function PropertiesPage() {
   const { config } = useSiteConfig()
-  const { properties } = useProperties()
+  const { properties, loading } = useProperties()
   const [filters, setFilters] = useState<PropertyFilterState>(() => defaultPropertyFilters())
   const [detail, setDetail] = useState<Property | null>(null)
   const [open, setOpen] = useState(false)
@@ -31,27 +31,35 @@ export function PropertiesPage() {
           />
           <PropertyFiltersToolbar properties={properties} value={filters} onChange={setFilters} showSort />
 
-          {!rows.length ? (
-            <Typography color="text.secondary" sx={{ my: 3 }}>
-              No matches for this permutation. Reset filters or broaden budget bands.
-            </Typography>
-          ) : null}
+          {loading ? (
+            <Box sx={{ display: 'flex', justifyContent: 'center', my: 8 }}>
+              <CircularProgress size={40} />
+            </Box>
+          ) : (
+            <>
+              {!rows.length ? (
+                <Typography color="text.secondary" sx={{ my: 3 }}>
+                  No matches for this permutation. Reset filters or broaden budget bands.
+                </Typography>
+              ) : null}
 
-          <Grid container spacing={3}>
-            {rows.map((p, i) => (
-              <Grid key={p.id} size={{ xs: 12, md: 6 }}>
-                <Reveal delay={Math.min(i * 0.04, 0.35)}>
-                  <PropertyCard
-                    property={p}
-                    onViewDetails={() => {
-                      setDetail(p)
-                      setOpen(true)
-                    }}
-                  />
-                </Reveal>
+              <Grid container spacing={3}>
+                {rows.map((p, i) => (
+                  <Grid key={p.id} size={{ xs: 12, md: 6 }}>
+                    <Reveal delay={Math.min(i * 0.04, 0.35)}>
+                      <PropertyCard
+                        property={p}
+                        onViewDetails={() => {
+                          setDetail(p)
+                          setOpen(true)
+                        }}
+                      />
+                    </Reveal>
+                  </Grid>
+                ))}
               </Grid>
-            ))}
-          </Grid>
+            </>
+          )}
         </Container>
       </Box>
 

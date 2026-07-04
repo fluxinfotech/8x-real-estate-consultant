@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { Box, Button, Container, Grid, Stack, Typography } from '@mui/material'
+import { Box, Button, CircularProgress, Container, Grid, Stack, Typography } from '@mui/material'
 import EastRoundedIcon from '@mui/icons-material/EastRounded'
 import { Link as RouterLink } from 'react-router-dom'
 import { AnimatedStat } from '../animations/AnimatedStat'
@@ -22,7 +22,7 @@ import { defaultPropertyFilters, filterProperties, sortProperties, type Property
 
 export function HomePage() {
   const { config } = useSiteConfig()
-  const { properties } = useProperties()
+  const { properties, loading } = useProperties()
   const brand = config.brand.name
   const tagline = config.brand.tagline
 
@@ -94,20 +94,28 @@ export function HomePage() {
             subtitle="Use quick filters—or open the Properties desk for search, sorting, and deep catalog review. Listing data sits in bundled JSON under src/data/properties.json."
           />
           <PropertyFiltersToolbar properties={featuredPool} value={featuredFilters} onChange={setFeaturedFilters} showSort={false} />
-          <Grid container spacing={3}>
-            {featuredDisplay.map((p, i) => (
-              <Grid key={p.id} size={{ xs: 12, md: 6, lg: 4 }}>
-                <Reveal delay={i * 0.06}>
-                  <PropertyCard property={p} onViewDetails={() => openDetail(p)} />
-                </Reveal>
+          {loading ? (
+            <Box sx={{ display: 'flex', justifyContent: 'center', my: 8 }}>
+              <CircularProgress size={40} />
+            </Box>
+          ) : (
+            <>
+              <Grid container spacing={3}>
+                {featuredDisplay.map((p, i) => (
+                  <Grid key={p.id} size={{ xs: 12, md: 6, lg: 4 }}>
+                    <Reveal delay={i * 0.06}>
+                      <PropertyCard property={p} onViewDetails={() => openDetail(p)} />
+                    </Reveal>
+                  </Grid>
+                ))}
               </Grid>
-            ))}
-          </Grid>
-          {!featuredDisplay.length ? (
-            <Typography color="text.secondary" sx={{ mt: 2 }}>
-              No listings match these filters yet—relax budget or geography to widen the aperture.
-            </Typography>
-          ) : null}
+              {!featuredDisplay.length ? (
+                <Typography color="text.secondary" sx={{ mt: 2 }}>
+                  No listings match these filters yet—relax budget or geography to widen the aperture.
+                </Typography>
+              ) : null}
+            </>
+          )}
           <Stack direction="row" sx={{ justifyContent: 'center', mt: 5 }}>
             <Button component={RouterLink} to="/properties" variant="outlined" size="large" endIcon={<EastRoundedIcon />} sx={{ px: 4, borderRadius: 999 }}>
               Open full catalogue
