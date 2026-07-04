@@ -1,5 +1,4 @@
 import { Box, Container, Divider, IconButton, Link, Stack, Typography } from '@mui/material'
-import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import { NavLink } from 'react-router-dom'
 import type { SiteConfig } from '../types'
@@ -43,10 +42,7 @@ export function Footer({ config }: FooterProps) {
               {config.brand.tagline}
             </Typography>
             <Stack direction="row" spacing={1} sx={{ mt: 2 }}>
-              <IconButton aria-label="LinkedIn" size="small" component="a" href="https://www.linkedin.com" target="_blank" rel="noreferrer">
-                <LinkedInIcon fontSize="small" />
-              </IconButton>
-              <IconButton aria-label="Instagram" size="small" component="a" href="https://www.instagram.com" target="_blank" rel="noreferrer">
+              <IconButton aria-label="Instagram" size="small" component="a" href="https://www.instagram.com/8x_realestate?igsh=dTM3amlnNmQzNm96" target="_blank" rel="noreferrer">
                 <InstagramIcon fontSize="small" />
               </IconButton>
             </Stack>
