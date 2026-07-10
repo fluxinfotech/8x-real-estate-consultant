@@ -9,6 +9,7 @@ import { HeroFullscreen } from '../components/home/HeroFullscreen'
 import { InvestmentOpportunityGrid } from '../components/home/InvestmentOpportunityGrid'
 import { TestimonialsCarousel } from '../components/home/TestimonialsCarousel'
 import { WhyChooseStrip } from '../components/home/WhyChooseStrip'
+import { ChannelPartnersMarquee } from '../components/home/ChannelPartnersMarquee'
 import { PropertyCard } from '../components/properties/PropertyCard'
 import { PropertyFiltersToolbar } from '../components/properties/PropertyFiltersToolbar'
 import { PropertyQuickView } from '../components/properties/PropertyQuickView'
@@ -85,6 +86,8 @@ export function HomePage() {
           </Box>
         </Container>
       </Box>
+
+      <ChannelPartnersMarquee />
 
       <Box sx={{ py: { xs: 6, md: 10 } }}>
         <Container maxWidth="lg">

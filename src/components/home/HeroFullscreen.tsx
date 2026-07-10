@@ -116,7 +116,7 @@ export function HeroFullscreen({ brandName, tagline }: HeroFullscreenProps) {
         </motion.div>
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.75, duration: 0.8 }}>
           <Typography variant="caption" color="text.secondary" sx={{ letterSpacing: '0.38em', textTransform: 'uppercase', display: 'block', mt: 4 }}>
-            Private desk · Institutional discipline
+            RERA Id: A51700029659
           </Typography>
         </motion.div>
       </Box>
