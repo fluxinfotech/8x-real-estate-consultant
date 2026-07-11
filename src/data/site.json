@@ -13,73 +13,213 @@
     "ogImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80"
   },
   "contact": {
-    "email": "concierge@8xrealestate.com",
+    "email": "8xrealestate@gmail.com",
     "phoneDisplay": "+91 99308 34848",
     "phoneTel": "+919930834848",
     "whatsappDigits": "919930834848",
     "addressLine": "Office no. 102, 1st Floor, Jadhav Estate, Near Kalpataru Parkcity, Kolshet Road, Thane West 400607, Maharashtra, India",
-    "mapEmbedSrc": "https://www.google.com/maps?q=Jadhav+Estate%2C+Kolshet+Road%2C+Thane+West%2C+400607&output=embed&z=17"
+    "mapEmbedSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3590.6222409967163!2d72.9846525!3d19.229667900000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b99db0849f77%3A0x14aac818e2bda4e4!2s8x%20Real%20Estate%20Consultant!5e1!3m2!1sen!2sin!4v1783751393850!5m2!1sen!2sin"
   },
   "stats": [
-    { "label": "Properties Sold", "value": 1840, "prefix": "", "suffix": "+" },
-    { "label": "Happy Clients", "value": 620, "prefix": "", "suffix": "+" },
-    { "label": "Neighbourhoods covered", "value": 3, "prefix": "", "suffix": "" },
-    { "label": "Investment Growth", "value": 27, "prefix": "", "suffix": "%" },
-    { "label": "Years advising Thane & MMR clients", "value": 8, "prefix": "", "suffix": "+" }
+    {
+      "label": "Properties Sold",
+      "value": 1840,
+      "prefix": "",
+      "suffix": "+"
+    },
+    {
+      "label": "Happy Clients",
+      "value": 620,
+      "prefix": "",
+      "suffix": "+"
+    },
+    {
+      "label": "Neighbourhoods covered",
+      "value": 3,
+      "prefix": "",
+      "suffix": ""
+    },
+    {
+      "label": "Investment Growth",
+      "value": 27,
+      "prefix": "",
+      "suffix": "%"
+    },
+    {
+      "label": "Years advising Thane & MMR clients",
+      "value": 8,
+      "prefix": "",
+      "suffix": "+"
+    }
   ],
   "about": {
     "headline": "A singular desk for principals who refuse generic brokerage.",
     "companyStory": [
       "Founded on the premise that multiplying capital requires obsessive discipline, 8x Real Estate Consultant was built at the intersection of institutional research and concierge execution.",
       "We work hands-on across Kolshet, Balkum, and Manpada—corridors we walk daily—pairing micro-market comps with negotiation architecture for buyers, sellers, and investors.",
-      "While our roots are in Thane West, we extend mandates across the Mumbai Metropolitan Region with the same ethos: transparency, verified inventory, and negotiator-grade outcomes."
+      "While our roots are in Thane West, we extend mandates across the Mumbai Metropolitan Region with the same ethos: transparency, verified inventory, and negotiator-grade outcomes.",
+      "Our model is intentionally lean: no vanity storefronts, no rotating call-centers. Just principals, data, and documented outcomes.",
+      "Whether you’re buying a first home, scaling a portfolio, or divesting corporate assets, we embed the same rigor into every mandate."
     ],
     "mission": "Elevate every real estate decision with research-grade clarity, fiduciary rigor, and white-glove delivery.",
     "vision": "To be the boutique advisory synonymous with compounded property value—for investors who treat real estate as a primary asset class.",
-    "founderQuote": "We do not chase volume. We architect outcomes that survive rate cycles and style trends alike.",
+    "founderQuote": "",
     "founderTitle": "Founding Principal · 8x Real Estate Consultant",
     "marketExpertise": "Deep comps across Thane West micro-markets (Kolshet, Balkum, Manpada), MMR velocity trends, RERA-aligned diligence, resale underwriting, and rental yield models—packaged into board-ready summaries.",
     "pillars": [
-      { "title": "Integrity of Source", "body": "Every listing is lineage-checked; off-market introductions are screened for developer credibility and title hygiene." },
-      { "title": "Negotiation DNA", "body": "We structure offers, escalation ladders, and walk-away thresholds before you enter a room." },
-      { "title": "Capital Continuity", "body": "From bank syndication introductions to staggered exits—capital stays purposeful." }
+      {
+        "title": "Integrity of Source",
+        "body": "Every listing is lineage-checked; off-market introductions are screened for developer credibility and title hygiene."
+      },
+      {
+        "title": "Negotiation DNA",
+        "body": "We structure offers, escalation ladders, and walk-away thresholds before you enter a room."
+      },
+      {
+        "title": "Capital Continuity",
+        "body": "From bank syndication introductions to staggered exits—capital stays purposeful."
+      }
     ],
     "timeline": [
-      { "year": "2014", "title": "Boutique mandates", "body": "First mandates across Thane’s premium corridors—family homes and gated communities." },
-      { "year": "2018", "title": "MMR expansion", "body": "Formalized pipelines across Thane West, central suburbs, and Navi Mumbai with vetted legal partners." },
-      { "year": "2022", "title": "Yield intelligence", "body": "Launched NOI audits and rental stack advisory for investors and business owners." },
-      { "year": "2025", "title": "8x Thane standard", "body": "Unified digital dossiers, encrypted data rooms, and on-ground site intelligence anchored from our Kolshet Road office." }
+      {
+        "year": "2014",
+        "title": "Boutique mandates",
+        "body": "First mandates across Thane’s premium corridors—family homes and gated communities."
+      },
+      {
+        "year": "2018",
+        "title": "MMR expansion",
+        "body": "Formalized pipelines across Thane West, central suburbs, and Navi Mumbai with vetted legal partners."
+      },
+      {
+        "year": "2022",
+        "title": "Yield intelligence",
+        "body": "Launched NOI audits and rental stack advisory for investors and business owners."
+      },
+      {
+        "year": "2025",
+        "title": "8x Thane standard",
+        "body": "Unified digital dossiers, encrypted data rooms, and on-ground site intelligence anchored from our Kolshet Road office."
+      }
     ]
   },
   "services": [
-    { "title": "Property Consulting", "description": "Macro-to-micro briefings, zoning intelligence, and buy/hold frameworks tailored to your liquidity curve.", "icon": "consult" },
-    { "title": "Investment Planning", "description": "Scenario stacks, IRR guardrails, and blended portfolios across residential, commercial, and plots.", "icon": "planning" },
-    { "title": "Property Resale", "description": "Private market matching, discreet marketing, buyer qualification, and frictionless handovers.", "icon": "resale" },
-    { "title": "Rental Management", "description": "Operator introductions, furnishing partners, covenant structuring, and performance reporting.", "icon": "rental" },
-    { "title": "Home Loan Assistance", "description": "Bank introductions, dossier choreography, differential rate benchmarking, drawdown choreography.", "icon": "loan" },
-    { "title": "Legal Documentation", "description": "Title diligence, agreement review, escrow workflows, developer addenda, and liaison with retained counsel.", "icon": "legal" }
+    {
+      "title": "Property Consulting",
+      "description": "Macro-to-micro briefings, zoning intelligence, and buy/hold frameworks tailored to your liquidity curve.",
+      "icon": "consult"
+    },
+    {
+      "title": "Investment Planning",
+      "description": "Scenario stacks, IRR guardrails, and blended portfolios across residential, commercial, and plots.",
+      "icon": "planning"
+    },
+    {
+      "title": "Property Resale",
+      "description": "Private market matching, discreet marketing, buyer qualification, and frictionless handovers.",
+      "icon": "resale"
+    },
+    {
+      "title": "Rental Management",
+      "description": "Operator introductions, furnishing partners, covenant structuring, and performance reporting.",
+      "icon": "rental"
+    },
+    {
+      "title": "Home Loan Assistance",
+      "description": "Bank introductions, dossier choreography, differential rate benchmarking, drawdown choreography.",
+      "icon": "loan"
+    },
+    {
+      "title": "Legal Documentation",
+      "description": "Title diligence, agreement review, escrow workflows, developer addenda, and liaison with retained counsel.",
+      "icon": "legal"
+    }
   ],
   "whyChooseUs": [
-    { "title": "Investment Expertise", "body": "Proprietary comps, developer scorecards, and sensitivity models before you mobilize capital.", "icon": "trending" },
-    { "title": "Legal Assistance", "body": "We coordinate agreements, escrow, lien checks, NOC choreography, and registration timelines.", "icon": "gavel" },
-    { "title": "Verified Properties", "body": "Seller verification, lien sweeps, and physical audit documentation on every mandated asset.", "icon": "verified" },
-    { "title": "Loan Support", "body": "Preferred banker routing, subsidy awareness, paperwork optimization, sanction-to-disbursal tracking.", "icon": "account_balance" },
-    { "title": "Personalized Consulting", "body": "A named partner—not a rotating call-center—owns your file from scouting to possession.", "icon": "person" }
+    {
+      "title": "Investment Expertise",
+      "body": "Proprietary comps, developer scorecards, and sensitivity models before you mobilize capital.",
+      "icon": "trending"
+    },
+    {
+      "title": "Legal Assistance",
+      "body": "We coordinate agreements, escrow, lien checks, NOC choreography, and registration timelines.",
+      "icon": "gavel"
+    },
+    {
+      "title": "Verified Properties",
+      "body": "Seller verification, lien sweeps, and physical audit documentation on every mandated asset.",
+      "icon": "verified"
+    },
+    {
+      "title": "Loan Support",
+      "body": "Preferred banker routing, subsidy awareness, paperwork optimization, sanction-to-disbursal tracking.",
+      "icon": "account_balance"
+    },
+    {
+      "title": "Personalized Consulting",
+      "body": "A named partner—not a rotating call-center—owns your file from scouting to possession.",
+      "icon": "person"
+    }
   ],
   "investmentOpportunities": [
-    { "title": "Luxury Apartments", "body": "High-rise and mid-rise inventory around Kolshet, Balkum, and Manpada with scalable payment plans.", "icon": "apartment" },
-    { "title": "Commercial Properties", "body": "Retail shells, office floors, and corridor-facing assets along Ghodbunder and main arterial routes.", "icon": "domain" },
-    { "title": "Villas & Row Homes", "body": "Gated communities and low-rise formats with clubhouse and green buffers.", "icon": "villa" },
-    { "title": "Plots", "body": "Zoned parcels with infra visibility, layout plans, and land-banking IRR models.", "icon": "landscape" },
-    { "title": "Rental Investments", "body": "Stabilized apartments and small portfolios with tenant diligence and yield benchmarking.", "icon": "payments" }
+    {
+      "title": "Luxury Apartments",
+      "body": "High-rise and mid-rise inventory around Kolshet, Balkum, and Manpada with scalable payment plans.",
+      "icon": "apartment"
+    },
+    {
+      "title": "Commercial Properties",
+      "body": "Retail shells, office floors, and corridor-facing assets along Ghodbunder and main arterial routes.",
+      "icon": "domain"
+    },
+    {
+      "title": "Villas & Row Homes",
+      "body": "Gated communities and low-rise formats with clubhouse and green buffers.",
+      "icon": "villa"
+    },
+    {
+      "title": "Plots",
+      "body": "Zoned parcels with infra visibility, layout plans, and land-banking IRR models.",
+      "icon": "landscape"
+    },
+    {
+      "title": "Rental Investments",
+      "body": "Stabilized apartments and small portfolios with tenant diligence and yield benchmarking.",
+      "icon": "payments"
+    }
   ],
   "testimonials": [
-    { "quote": "8x underwrote three scenarios before we committed capital—every document was banker-ready.", "name": "Avantika Rao", "role": "Portfolio CEO", "rating": 5, "location": "Thane West" },
-    { "quote": "They know Kolshet and Manpada block-by-block—we closed a resale in under six weeks with zero surprises.", "name": "Rahul Mehta", "role": "Business Owner", "rating": 5, "location": "Balkum" },
-    { "quote": "Clear rental underwriting and lender coordination—finally an advisory that treats numbers seriously.", "name": "Priya Sunder", "role": "Angel Syndicate Lead", "rating": 5, "location": "Mumbai" }
+    {
+      "quote": "8x underwrote three scenarios before we committed capital—every document was banker-ready.",
+      "name": "Avantika Rao",
+      "role": "Portfolio CEO",
+      "rating": 5,
+      "location": "Thane West"
+    },
+    {
+      "quote": "They know Kolshet and Manpada block-by-block—we closed a resale in under six weeks with zero surprises.",
+      "name": "Rahul Mehta",
+      "role": "Business Owner",
+      "rating": 5,
+      "location": "Balkum"
+    },
+    {
+      "quote": "Clear rental underwriting and lender coordination—finally an advisory that treats numbers seriously.",
+      "name": "Priya Sunder",
+      "role": "Angel Syndicate Lead",
+      "rating": 5,
+      "location": "Mumbai"
+    }
   ],
   "businessHours": [
-    { "days": "Monday – Saturday", "hours": "10:00 — 19:00 IST" },
-    { "days": "Sunday", "hours": "By appointment only" }
+    {
+      "days": "Monday – Saturday",
+      "hours": "10:00 — 19:00 IST"
+    },
+    {
+      "days": "Sunday",
+      "hours": "By appointment only"
+    }
   ]
 }

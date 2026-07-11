@@ -27,7 +27,7 @@ export function PropertiesPage() {
           <SectionHeader
             kicker="Portfolio grid"
             title="Signals-grade inventory with uncompromising documentation."
-            subtitle="Search, tier budgets, reshape geography, reorder by economics—everything runs client-side via static JSON bundles."
+            subtitle="Search, tier budgets, reshape geography, reorder by economics."
           />
           <PropertyFiltersToolbar properties={properties} value={filters} onChange={setFilters} showSort />
 

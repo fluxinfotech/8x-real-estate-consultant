@@ -41,7 +41,7 @@ export function ContactPage() {
                     <Typography variant="overline" color="primary" sx={{ letterSpacing: '0.22em' }}>
                       Phones & WhatsApp
                     </Typography>
-                    <Typography variant="h6" sx={{ mt: 1.5 }}>
+                    <Typography variant="h6" sx={{ mt: 1.5, fontFamily: 'serif', fontWeight: 300 }}>
                       <Box component="a" href={`tel:${c.phoneTel}`} sx={{ color: 'inherit', textDecoration: 'none' }}>
                         {c.phoneDisplay}
                       </Box>

@@ -6,6 +6,7 @@ import { GlassPanel } from '../components/ui/GlassPanel'
 import { SectionHeader } from '../components/ui/SectionHeader'
 import { Reveal } from '../animations/Reveal'
 import { useSiteConfig } from '../hooks/useSiteConfig'
+import founderImg from '../assets/atul-jadhav-founder.jpg'
 
 export function AboutPage() {
   const { config } = useSiteConfig()
@@ -20,6 +21,41 @@ export function AboutPage() {
           <SectionHeader kicker="Firm dossier" title={a.headline} subtitle={a.marketExpertise} />
 
           <Grid container spacing={4} sx={{ mb: 6 }}>
+            <Grid size={{ xs: 12, md: 4 }}>
+              <GlassPanel sx={{ p: 3, height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                <Box>
+                  <Typography variant="overline" color="primary">
+                    Founder
+                  </Typography>
+                  <Box
+                    component="img"
+                    src={founderImg}
+                    alt="Mr. Atul Jadhav"
+                    sx={{
+                      width: '100%',
+                      height: 260,
+                      objectFit: 'cover',
+                      borderRadius: 2,
+                      mt: 1.5,
+                      mb: 2,
+                      border: (t) => `1px solid ${t.palette.divider}`
+                    }}
+                  />
+                  <FormatQuoteRoundedIcon sx={{ color: 'primary.main', fontSize: 32, display: 'block', mb: 0.5 }} />
+                  <Typography variant="body1" sx={{ fontFamily: '"Cormorant Garamond", serif', fontSize: '1.25rem', lineHeight: 1.5, mb: 2, fontStyle: 'italic' }}>
+                    {a.founderQuote}
+                  </Typography>
+                </Box>
+                <Box>
+                  <Typography variant="subtitle1" sx={{ fontWeight: 700, lineHeight: 1.2 }}>
+                    Mr. Atul Jadhav
+                  </Typography>
+                  <Typography variant="caption" color="text.secondary" sx={{ letterSpacing: '0.05em', display: 'block', mt: 0.5 }}>
+                    {a.founderTitle}
+                  </Typography>
+                </Box>
+              </GlassPanel>
+            </Grid>
             <Grid size={{ xs: 12, md: 8 }}>
               {a.companyStory.map((paragraph, idx) => (
                 <Reveal key={idx}>
@@ -28,20 +64,6 @@ export function AboutPage() {
                   </Typography>
                 </Reveal>
               ))}
-            </Grid>
-            <Grid size={{ xs: 12, md: 4 }}>
-              <GlassPanel sx={{ p: 3, height: '100%' }}>
-                <Typography variant="overline" color="primary">
-                  Founder message
-                </Typography>
-                <FormatQuoteRoundedIcon sx={{ mt: 1, mb: 1, color: 'primary.main', fontSize: 36 }} />
-                <Typography variant="body1" sx={{ fontFamily: '"Cormorant Garamond", serif', fontSize: '1.35rem', lineHeight: 1.6, mb: 2 }}>
-                  {a.founderQuote}
-                </Typography>
-                <Typography variant="caption" color="text.secondary" sx={{ letterSpacing: '0.12em' }}>
-                  {a.founderTitle}
-                </Typography>
-              </GlassPanel>
             </Grid>
           </Grid>
 

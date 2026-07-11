@@ -94,7 +94,7 @@ export function HomePage() {
           <SectionHeader
             kicker="Featured inventory"
             title="Architectural scarcity, dossier-checked before it reaches your inbox."
-            subtitle="Use quick filters—or open the Properties desk for search, sorting, and deep catalog review. Listing data sits in bundled JSON under src/data/properties.json."
+            subtitle="Use quick filters—or open the Properties desk for search, sorting, and deep catalog review."
           />
           <PropertyFiltersToolbar properties={featuredPool} value={featuredFilters} onChange={setFeaturedFilters} showSort={false} />
           {loading ? (
