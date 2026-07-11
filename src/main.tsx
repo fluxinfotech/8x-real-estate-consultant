@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { HelmetProvider } from 'react-helmet-async'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.tsx'
 import { ColorModeProvider } from './context/ColorModeContext'
@@ -9,11 +9,11 @@ import { ColorModeProvider } from './context/ColorModeContext'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <HelmetProvider>
-      <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <HashRouter>
         <ColorModeProvider>
           <App />
         </ColorModeProvider>
-      </BrowserRouter>
+      </HashRouter>
     </HelmetProvider>
   </StrictMode>,
 )

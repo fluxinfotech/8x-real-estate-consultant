@@ -46,7 +46,9 @@ export function ContactPage() {
                         {c.phoneDisplay}
                       </Box>
                     </Typography>
-                    <Button component="a" href={`https://wa.me/${c.whatsappDigits}?text=${encodeURIComponent('Hello 8x — concierge inquiry.')}`} target="_blank" rel="noreferrer" sx={{ mt: 1 }}>
+                    <Button component="a" href={`https://wa.me/${c.whatsappDigits}?text=${encodeURIComponent(
+                      `Hello 8x Real Estate team, \n\nI’m looking for expert assistance with buying, selling, renting, investing, or any property-related consultation. \nPlease connect with me to discuss my requirements. \nThank you!`
+                    )}`} target="_blank" rel="noreferrer" sx={{ mt: 1 }}>
                       Open WhatsApp thread
                     </Button>
                   </GlassPanel>

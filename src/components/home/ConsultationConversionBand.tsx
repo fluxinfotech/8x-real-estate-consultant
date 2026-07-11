@@ -11,7 +11,9 @@ type Props = {
 }
 
 export function ConsultationConversionBand({ phoneTel, whatsappDigits }: Props) {
-  const wa = `https://wa.me/${whatsappDigits}?text=${encodeURIComponent('I would like an 8x portfolio consultation.')}`
+  const wa = `https://wa.me/${whatsappDigits}?text=${encodeURIComponent(
+    `Hello 8x Real Estate team, \n\nI’m looking for expert assistance with buying, selling, renting, investing, or any property-related consultation. \nPlease connect with me to discuss my requirements. \nThank you!`
+  )}`
 
   return (
     <Box

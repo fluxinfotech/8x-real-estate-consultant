@@ -17,7 +17,7 @@ function WhatsAppIcon() {
   )
 }
 
-export function WhatsAppFab({ whatsappDigits, message = 'Hello 8x Real Estate, I would like to discuss a property.' }: WhatsAppFabProps) {
+export function WhatsAppFab({ whatsappDigits, message = `Hello 8x Real Estate team, \n\nI’m looking for expert assistance with buying, selling, renting, investing, or any property-related consultation. \nPlease connect with me to discuss my requirements. \nThank you!` }: WhatsAppFabProps) {
   const href = `https://wa.me/${whatsappDigits}?text=${encodeURIComponent(message)}`
 
   return (

@@ -9,7 +9,9 @@ type StickyMobileCtaProps = {
 }
 
 export function StickyMobileCta({ phoneTel, whatsappDigits }: StickyMobileCtaProps) {
-  const wa = `https://wa.me/${whatsappDigits}?text=${encodeURIComponent('Hello 8x — I’d like portfolio options.')}`
+  const wa = `https://wa.me/${whatsappDigits}?text=${encodeURIComponent(
+    `Hello 8x Real Estate team, \n\nI’m looking for expert assistance with buying, selling, renting, investing, or any property-related consultation. \nPlease connect with me to discuss my requirements. \nThank you!`
+  )}`
   return (
     <Box
       sx={{
