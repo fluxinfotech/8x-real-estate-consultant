@@ -30,7 +30,7 @@ export function AboutPage() {
                   <Box
                     component="img"
                     src={founderImg}
-                    alt="Mr. Atul Jadhav"
+                    alt="Mr. Atul Arjun Jadhav"
                     sx={{
                       width: '100%',
                       height: 260,
@@ -48,7 +48,7 @@ export function AboutPage() {
                 </Box>
                 <Box>
                   <Typography variant="subtitle1" sx={{ fontWeight: 700, lineHeight: 1.2 }}>
-                    Mr. Atul Jadhav
+                    Mr. Atul Arjun Jadhav.
                   </Typography>
                   <Typography variant="caption" color="text.secondary" sx={{ letterSpacing: '0.05em', display: 'block', mt: 0.5 }}>
                     {a.founderTitle}
