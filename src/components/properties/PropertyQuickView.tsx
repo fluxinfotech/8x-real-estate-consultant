@@ -14,7 +14,9 @@ type PropertyQuickViewProps = {
 
 export function PropertyQuickView({ property, open, onClose, whatsappDigits }: PropertyQuickViewProps) {
   const waHref = property
-    ? `https://wa.me/${whatsappDigits}?text=${encodeURIComponent(`Inquiry: ${property.title} — ${property.location}`)}`
+    ? `https://wa.me/${whatsappDigits}?text=${encodeURIComponent(
+        `Hello 8x Real Estate team, \n\nI’m looking for expert assistance with ${property.title} property-related consultation. \nPlease connect with me to discuss my requirements. \nThank you`
+      )}`
     : '#'
 
   return (
